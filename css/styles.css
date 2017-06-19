@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+.box {
+    transition: all .125s ease-in;
+}
+
+body {
+    font-family: Roboto;
+    overflow-x: hidden;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+header {
+    box-shadow: 0px 0px 10px #000;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 29%;
+    background-color: white;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    top: 0;
+}
+
+header img {
+    height: 100%;
+    width: auto;
+}
+
+header .banner {
+    height: 20vh;
+    transition: all .15s ease-in;
+}
+
+header .banner.scrolled {
+    height: 0vh;
+}
+
+header .logo {
+    height: 100%;
+}
+
+nav.highlightGreen {
+    background-color: #005826;
+}
+
+nav li {
+    padding: 15px;
+}
+
+nav.highlightGreen a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul {
+    width: 600px;
+    margin: auto;
+    list-style: none;
+    display: flex;
+}
+
+#home {
+    padding-top: calc(20vh + 48px);
+}
+
+#home {
+    background-color: #005826;
+}
+
+#about,
+#academics,
+#contact {
+    padding-top: calc(10vh);
+}
+#contact {
+    padding-bottom: calc(5vh);
+}
+
+.icon{
+    width:50px;
+    display:inline-block;
+}
+
+#tour {
+    padding-top: calc(2vh);
+}
+
+.slider.hero {
+    background-color: grey;
+}
+
+.description {
+    text-align: left;
+}
+
+body .slider.hero {}
+
+body #academics .box {
+    height: 95px;
+    width: 95px;
+    margin: 25px;
+}
+
+body #academics .box:hover {
+    height: 100px;
+    width: 100px;
+    margin: 25px;
+}
+
+body #academics .box img {
+    width: 100%;
+    height: auto;
+}
+
+.acadWidth {
+    width: 70%;
+    margin: auto;
+    padding: 25px;
+}
+
+.acadWidth a {
+    display: inline-block;
+    margin: 25px;
+}
+
+.limitWidth {
+    width: 90%;
+    max-width: 1200px;
+}
+
+.centered {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.fixH {
+    margin: 60px 0;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex.row {
+    flex-flow: column;
+}
+
+.flex.column {
+    flex-flow: row wrap;
+}
+
+#about .flex .left {
+    width: 40%;
+}
+
+#about .flex .right {
+    width: 60%;
+    padding: 25px;
+    text-align: justify;
+}
+
+#contact .flex .left {
+    width: 60%;
+}
+
+#contact .flex .right {
+    width: 40%;
+}
+
+
+/***************
+** TEXT
+***************/
+
+span {
+    font-family: 'Roboto';
+}
+
+div.heading {
+    text-align: left;
+}
+
+span.green {
+    color: #005826;
+}
+
+span.yellow {
+    color: yellow;
+}
+
+div.highlightYellow {
+    background-color: yellow;
+    width: 180px;
+    padding: 1px;
+    text-align: center;
+}
+
+
+/***************
+**Video tour
+***************/
+
+.paddedGreen {
+    background-color: #005826;
+    padding: 25px 0;
+    margin: 50px 0;
+}
+
+.holdVideo {
+    height: 450px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.placeholderVideo {
+    width: 480px;
+    height: 320px;
+    background-color: grey;
+}
+
+@media all and (max-width:768px) {
+    nav {
+        display: none;
+    }
+    #home {
+        padding-top: calc(20vh);
+    }
+    .flex.column {
+        flex-flow: column;
+    }
+    #about .flex .left {
+        width: 100%;
+        padding: 0;
+    }
+    #about .flex .right {
+        width: 100%;
+        padding: 35px;
+        text-align: justify;
+    }
+    #contact .flex .left {
+        width: 100%;
+        padding: 35px;
+    }
+    #contact .flex .right {
+        width: 100%;
+        padding: 0;
+    }
+    
+}
